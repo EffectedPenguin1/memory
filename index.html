@@ -44,10 +44,59 @@
   </tr>
 </table>
 
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script>
+
+    card_obj = {
+    card_letters: [
+      "a",  //box 0
+      "b",  //box 1
+      "c",  //box 2
+      "d",  //box 3
+      "a",  //box 4
+      "b",  //box 5
+      "c",  //box 6
+      "d"   //box 7
+    ],
+    visible_letters: [],
+    selected_boxes: []
+  };
+
+$(".memory_box").on("click", function(){
+  alert("Anthony says hi");
+})
+
+$(".memory_box").on("click", function(){
+  console.log(this.id.replace("box_",""));
+});
+
+
+  var this_index  = this.id.replace("box_","");
+  var this_letter = card_obj["card_letters"][this_index];
+  $(this).html(this_letter);
+;
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
   /*
-  howdy = "hello world";
-alert(howdy)
+
+
+
   */
 
 </script>
+
+document.getElementById("element_id");
